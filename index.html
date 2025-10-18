@@ -34,11 +34,24 @@
       padding: 0;
     }
     .player {
+      display: flex;
+      align-items: center;
       background-color: #2e2e2e;
       margin-bottom: 15px;
       padding: 15px;
       border-radius: 8px;
       border-left: 5px solid #ffcc00;
+    }
+    .player img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+    .player-info {
+      display: flex;
+      flex-direction: column;
     }
     .role {
       font-style: italic;
@@ -48,26 +61,46 @@
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="Логотип TaxiAshot">
+    <img src="logo.png" alt="Логотип TaxiAshot">
     <h1>Команда TaxiAshot — Dota 2</h1>
   </header>
   <main>
     <h2>Состав команды</h2>
     <ul class="player-list">
       <li class="player">
-        <strong>Vlantony666</strong> — <span class="role">Керри</span>
+        <img src="p1.png" alt="Vlantony666">
+        <div class="player-info">
+          <strong>Vlantony666</strong>
+          <span class="role">Керри</span>
+        </div>
       </li>
       <li class="player">
-        <strong>Gesslor</strong> — <span class="role">Мид</span>
+        <img src="p2.png" alt="Gesslor">
+        <div class="player-info">
+          <strong>Gesslor</strong>
+          <span class="role">Мид</span>
+        </div>
       </li>
       <li class="player">
-        <strong>teplovkyy</strong> — <span class="role">Оффлейн</span>
+        <img src="p3.png" alt="teplovkyy">
+        <div class="player-info">
+          <strong>teplovkyy</strong>
+          <span class="role">Оффлейн</span>
+        </div>
       </li>
       <li class="player">
-        <strong>scvrxcrxw</strong> — <span class="role">Саппорт</span>
+        <img src="p4.png" alt="scvrxcrxw">
+        <div class="player-info">
+          <strong>scvrxcrxw</strong>
+          <span class="role">Саппорт</span>
+        </div>
       </li>
       <li class="player">
-        <strong>fantazytx</strong> — <span class="role">Хард-саппорт</span>
+        <img src="p5.png" alt="fantazytx">
+        <div class="player-info">
+          <strong>fantazytx</strong>
+          <span class="role">Хард-саппорт</span>
+        </div>
       </li>
     </ul>
   </main>
